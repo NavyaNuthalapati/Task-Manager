@@ -1,4 +1,4 @@
-# Team Task Manager
+# Team Task Manager 
 
 A simple front-end **Team Task Manager** built with HTML, CSS, and JavaScript. It lets users sign up, log in, and view a basic dashboard showing total projects and tasks.
 

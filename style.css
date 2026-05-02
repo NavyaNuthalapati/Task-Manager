@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffe6f2, #fff9db); 
+  color: #1f2933;
+  min-height: 100vh;
+}
+
+
+header {
+  background: #ffffff;
+  color: #1f2933;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #fbbf24; 
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+header h1 {
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  color: #f97373; 
+}
+
+header #status {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+main {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+#login,#signup,#dashboard {
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 10px;
+  padding: 20px 18px;
+  box-shadow: 0 12px 28px rgba(148, 163, 184, 0.35);
+  border: 1px solid rgba(252, 211, 77, 0.6); 
+}
+
+
+#login,#signup {
+  flex: 1 1 260px;
+}
+
+#dashboard {
+  flex: 1 1 100%;
+}
+
+h3,h4 {
+  margin-bottom: 16px;
+  color: #1f2933;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.inpt,.inpt2,select,#Tprojects,#Ttasks {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #fdfdfd;
+  color: #111827;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.inpt::placeholder,.inpt2::placeholder {
+  color: #9ca3af;
+}
+
+.inpt:hover,.inpt2:hover,select:hover,#Tprojects:hover,#Ttasks:hover {
+  border-color: #14b8a6; 
+  box-shadow: 1 1 1 3px rgba(20, 184, 166, 0.2);
+  background: #f0fdfa; 
+}
+
+
+button {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  background: #14b8a6;              
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.05s ease, box-shadow 0.15s ease;
+  margin-top: 4px;
+}
+
+button:hover {
+  background: #fb7185;             
+  box-shadow: 0 8px 18px rgba(251, 113, 133, 0.45);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(251, 113, 133, 0.3);
+}
+
+
+#dashboard label {
+  margin-top: 8px;
+}
+
+#dashboard input[type="number"] {
+  max-width: 220px;
+}
+
+
+@media (max-width: 640px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  main {
+    margin-top: 20px;
+  }
+
+  #login,#signup,#dashboard {
+    flex: 1 1 100%;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Task Manager</title>
+    <link rel="stylesheet" href="style.css"> <!--linking css file-->
+</head>
+<body>
+   <header><h1>Team Task Manager</h1>  <!--main heading of the page-->
+        <p id="status"> Not logged in</p>
+    </header> 
+   <main>
+      <div id="login">
+           <form> <h4>Login</h4>  <!--to show login block-->
+             <label for="user_name">Email</label>
+             <input type="text" class="inpt" id="user_name"><br>
+             <label for="pass">password</label>
+             <input type="password" class="inpt" id="pass"><br>
+             <button id="loginbutton">Login</button>
+          </form>
+      </div>
+
+      <div id="signup">
+            <form action=""><h4>SignUp</h4> <!--to show sign up block-->
+                   <label for="name">Name</label>
+                   <input type="text" id="name" class="inpt2"><br>
+                   <label for="email">Email</label>
+                   <input type="text" id="email" class="inpt2"><br>
+                   <label for="pas">Password</label>
+                   <input type="password" id="pas" class="inpt2"><br>
+                   <label for="role">Role</label>
+                   <select id="role" name="Role">
+                        <option value="admin">Admin</option>
+                        <option value="member">Member</option>
+                   </select><br>
+                   <button id="signupbutton"> Signup</button>
+
+            </form>
+      </div>
+
+      <div id="dashboard">  <!--to shoe dashboard block-->
+        <h3>Dashboard</h3>
+        <label for="Tprojects">Total Projects :</label>
+        <input type="number" placeholder="Total Projects" id="Tprojects">
+        <label for="Ttasks">Total Tasks</label>
+        <input type="number" placeholder="Total Tasks" id="Ttasks">
+      </div>
+    </main>
+    <footer><p id="foot"></p></footer>
+    <script src="app.js"></script>    <!-- linking js file-->
+</body>
+</html>

@@ -40,8 +40,4 @@ A simple front-end **Team Task Manager** built with HTML, CSS, and JavaScript. I
    - `app.js`
 3. Open `index.html` in any web browser.
 
-## Future Improvements
 
-- Store users in `localStorage` so data stays after refresh
-- Add real project and task management (create, update, delete)
-- Add logout button and role-based permissions
